@@ -1,0 +1,72 @@
+@use "../base" as *;
+@use "../partials/variables" as *;
+
+
+// new classes
+.heading-style{
+    color: $primary-color;
+    font-size: 68px;
+    font-family: $primary-font;
+}
+
+@media (max-width: 1200px){
+    .heading-style{
+        font-size: 50px;
+    }
+}
+@media (max-width: 992px){
+    .heading-style{
+        font-size: 35px;
+    }
+}
+
+.title-style{
+    color: $secondary-color;
+}
+
+.text-style{
+    color: $text-color;
+}
+
+.btn{
+    color: $tertiary-color;
+    background-color: $primary-color;
+    border: none;
+    transition: .3s;
+    &:hover {
+        background-color: darken($primary-color, 7%);
+        color: $tertiary-color;
+      }
+    padding: 5px 20px 5px 20px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.btn-outline{
+    background-color: $color-light;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    transition: .4s;
+    &:hover{
+        background-color: darken($primary-color, 7%);
+        color: $color-light;
+    }
+}
+
+
+.link{
+    color: $text-color;
+    transition: .3s;
+    &:hover{
+        // color: $primary-color;
+    }
+}
+
+
+
+
+
+
+
+
+
